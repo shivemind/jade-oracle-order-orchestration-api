@@ -1,0 +1,8 @@
+workflows:
+  syncSpecToCollection:
+    - spec: ../openapi/oracle-order-orchestration-api.yaml
+      collection: ../postman/collections/[Baseline] oracle-order-orchestration-api
+    - spec: ../openapi/oracle-order-orchestration-api.yaml
+      collection: ../postman/collections/[Smoke] oracle-order-orchestration-api
+    - spec: ../openapi/oracle-order-orchestration-api.yaml
+      collection: ../postman/collections/[Contract] oracle-order-orchestration-api

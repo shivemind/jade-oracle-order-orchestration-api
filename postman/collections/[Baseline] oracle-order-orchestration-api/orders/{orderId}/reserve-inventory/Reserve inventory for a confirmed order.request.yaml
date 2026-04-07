@@ -1,0 +1,42 @@
+type: http
+name: Reserve inventory for a confirmed order
+url: '{{baseUrl}}/orders/:orderId/reserve-inventory'
+method: POST
+headers:
+  - key: Accept
+    value: application/json
+pathVariables:
+  - key: orderId
+    value: b1ab071f-1f7a-8db2-487a-b91b1e081cdf
+examples:
+  - response:
+      statusCode: 202
+      statusText: Accepted
+      body:
+        type: json
+        content: |-
+          {
+            "actionId": "5b78c5aa-56b8-9aef-42fa-d4ccc6b7b763",
+            "orderId": "2388d197-e290-9b1f-9df2-a92fe292614d",
+            "status": "completed",
+            "message": "string"
+          }
+      headers:
+        - key: Content-Type
+          value: application/json
+    name: Inventory reservation requested
+  - response:
+      statusCode: 409
+      statusText: Conflict
+      body:
+        type: json
+        content: |-
+          {
+            "error": "string",
+            "message": "string",
+            "statusCode": 6577
+          }
+      headers:
+        - key: Content-Type
+          value: application/json
+    name: Inventory cannot be reserved

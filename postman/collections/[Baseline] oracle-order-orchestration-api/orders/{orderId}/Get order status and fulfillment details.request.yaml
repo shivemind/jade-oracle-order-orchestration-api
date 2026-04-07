@@ -1,0 +1,75 @@
+type: http
+name: Get order status and fulfillment details
+url: '{{baseUrl}}/orders/:orderId'
+method: GET
+headers:
+  - key: Accept
+    value: application/json
+pathVariables:
+  - key: orderId
+    value: b1ab071f-1f7a-8db2-487a-b91b1e081cdf
+examples:
+  - response:
+      statusCode: 200
+      statusText: OK
+      body:
+        type: json
+        content: |-
+          {
+            "id": "87dbd21b-3e6a-0b62-ab4a-a479887fc98d",
+            "customerId": "string",
+            "sourceSystem": "string",
+            "orderDate": "2025-08-01",
+            "currency": "string",
+            "status": "draft",
+            "totalAmount": 5350.646425858902,
+            "lineItems": [
+              {
+                "sku": "string",
+                "quantity": 9142,
+                "unitPrice": 5652.75365310766,
+                "warehouseCode": "string"
+              },
+              {
+                "sku": "string",
+                "quantity": 3052,
+                "unitPrice": 6585.0044184021535,
+                "warehouseCode": "string"
+              }
+            ],
+            "shipments": [
+              {
+                "shipmentId": "bfcc9b1d-a554-3cb4-c4b6-eaf120acc5d0",
+                "carrier": "string",
+                "shipFrom": "string",
+                "trackingReference": "string",
+                "status": "created"
+              },
+              {
+                "shipmentId": "499122c2-30a9-5c26-7e02-dee7f6e1d07c",
+                "carrier": "string",
+                "shipFrom": "string",
+                "trackingReference": "string",
+                "status": "packed"
+              }
+            ]
+          }
+      headers:
+        - key: Content-Type
+          value: application/json
+    name: Order details
+  - response:
+      statusCode: 404
+      statusText: Not Found
+      body:
+        type: json
+        content: |-
+          {
+            "error": "string",
+            "message": "string",
+            "statusCode": 6577
+          }
+      headers:
+        - key: Content-Type
+          value: application/json
+    name: Order not found
