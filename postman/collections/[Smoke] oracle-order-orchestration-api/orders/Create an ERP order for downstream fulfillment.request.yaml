@@ -12,13 +12,13 @@ body:
   content: |-
     {
       "customerId": "string",
-      "orderDate": "1999-02-02",
+      "orderDate": "1990-06-28",
       "currency": "USD",
       "lineItems": [
         {
           "sku": "string",
-          "quantity": 3271,
-          "unitPrice": 4411.525739118947,
+          "quantity": 5652,
+          "unitPrice": 9034.246639600078,
           "warehouseCode": "string"
         }
       ],
@@ -50,41 +50,41 @@ examples:
         type: json
         content: |-
           {
-            "id": "308f6ed7-9433-da05-efdd-cabdf8129051",
+            "id": "97e751ee-947c-4e85-0ce3-d6a45c2b1bbf",
             "customerId": "string",
             "sourceSystem": "string",
-            "orderDate": "1950-04-13",
+            "orderDate": "1972-10-25",
             "currency": "string",
-            "status": "draft",
-            "totalAmount": 6747.577884509233,
+            "status": "reserved",
+            "totalAmount": 4717.677397498532,
             "lineItems": [
               {
                 "sku": "string",
-                "quantity": 7227,
-                "unitPrice": 7439.1612784243425,
+                "quantity": 1089,
+                "unitPrice": 4371.377998549526,
                 "warehouseCode": "string"
               },
               {
                 "sku": "string",
-                "quantity": 6012,
-                "unitPrice": 8176.886513109765,
+                "quantity": 6645,
+                "unitPrice": 5218.292129120335,
                 "warehouseCode": "string"
               }
             ],
             "shipments": [
               {
-                "shipmentId": "701d6663-8d42-1509-cf57-af006e6ba0ee",
+                "shipmentId": "b99060fa-712e-fdc3-8039-bb8582a52bae",
                 "carrier": "string",
                 "shipFrom": "string",
                 "trackingReference": "string",
-                "status": "shipped"
+                "status": "delivered"
               },
               {
-                "shipmentId": "6fd27361-82a0-6a08-111d-5685ea7f2fef",
+                "shipmentId": "9f107d53-076a-beb8-e6ec-3bc5a37ab285",
                 "carrier": "string",
                 "shipFrom": "string",
                 "trackingReference": "string",
-                "status": "created"
+                "status": "packed"
               }
             ]
           }
@@ -101,7 +101,7 @@ examples:
           {
             "error": "string",
             "message": "string",
-            "statusCode": 1145
+            "statusCode": 890
           }
       headers:
         - key: Content-Type

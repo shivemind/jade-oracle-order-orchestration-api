@@ -7,7 +7,7 @@ headers:
     value: application/json
 pathVariables:
   - key: orderId
-    value: d769236d-5886-8726-6b24-615a0e1c51c7
+    value: d49433e6-039d-cbae-c33b-4c61416610eb
 scripts:
   - type: afterResponse
     code:
@@ -34,9 +34,9 @@ examples:
         type: json
         content: |-
           {
-            "actionId": "983b98a0-b41e-bda0-5b15-c65a11fb8a64",
-            "orderId": "4c4a8d4c-5d84-47ed-1748-0e3510e7c500",
-            "status": "completed",
+            "actionId": "c23bcf9f-b1d3-d709-d1d6-2deef77cb0dd",
+            "orderId": "fcba2e68-93a5-683a-071d-e35b151ea0c8",
+            "status": "queued",
             "message": "string"
           }
       headers:
@@ -52,7 +52,7 @@ examples:
           {
             "error": "string",
             "message": "string",
-            "statusCode": 1145
+            "statusCode": 890
           }
       headers:
         - key: Content-Type

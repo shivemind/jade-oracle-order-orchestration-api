@@ -7,7 +7,7 @@ headers:
     value: application/json
 pathVariables:
   - key: orderId
-    value: b1ab071f-1f7a-8db2-487a-b91b1e081cdf
+    value: 72560007-4399-20d6-a6bb-f2b4b2c70ffb
 examples:
   - response:
       statusCode: 202
@@ -16,9 +16,9 @@ examples:
         type: json
         content: |-
           {
-            "actionId": "5b78c5aa-56b8-9aef-42fa-d4ccc6b7b763",
-            "orderId": "2388d197-e290-9b1f-9df2-a92fe292614d",
-            "status": "completed",
+            "actionId": "303b2581-53e6-2832-47c6-c7a48304765d",
+            "orderId": "fe2b9001-fdb7-c9d7-5378-d7307acc0a2a",
+            "status": "queued",
             "message": "string"
           }
       headers:
@@ -34,7 +34,7 @@ examples:
           {
             "error": "string",
             "message": "string",
-            "statusCode": 6577
+            "statusCode": 3316
           }
       headers:
         - key: Content-Type
