@@ -14,7 +14,7 @@ cloudResources:
   collections:
     ../postman/collections/[Baseline] oracle-order-orchestration-api: 52400725-656d5922-1ef9-43b7-b28f-7f2c07ad9461
     ../postman/collections/[Smoke] oracle-order-orchestration-api: 52400725-ea4b0627-0524-47cc-bbd2-f292e3ee3173
-    ../postman/collections/[Contract] oracle-order-orchestration-api: 52400725-79516219-2174-455b-be45-7ef82775d74e
+    ../postman/collections/[Contract] oracle-order-orchestration-api: 52400725-0091afca-1094-4102-a789-8be91340e0f2
   environments:
     ../postman/environments/prod.postman_environment.json: 52400725-aad05204-e054-4df2-bb72-7a909673160a
     ../postman/environments/stage.postman_environment.json: 52400725-2577e511-616a-49fc-8a4b-23e288394a96

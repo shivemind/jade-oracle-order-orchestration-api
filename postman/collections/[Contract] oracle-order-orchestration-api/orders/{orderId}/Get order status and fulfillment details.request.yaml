@@ -7,7 +7,7 @@ headers:
     value: application/json
 pathVariables:
   - key: orderId
-    value: 7ee255f4-aacc-3271-9d97-1a267812bf0c
+    value: 44e7c1a1-dbfd-ee84-72fe-ff8a0617013d
 scripts:
   - type: afterResponse
     code:
@@ -77,41 +77,41 @@ examples:
         type: json
         content: |-
           {
-            "id": "a8996203-1150-66e1-87c6-abbab03e6df5",
+            "id": "32de2935-f1ec-b78e-cb91-8fbf5fabdb48",
             "customerId": "string",
             "sourceSystem": "string",
-            "orderDate": "2018-08-21",
+            "orderDate": "1987-11-26",
             "currency": "string",
-            "status": "shipped",
-            "totalAmount": 1841.5825862803813,
+            "status": "partially_shipped",
+            "totalAmount": 7577.39933094276,
             "lineItems": [
               {
                 "sku": "string",
-                "quantity": 5739,
-                "unitPrice": 3645.4821649458813,
+                "quantity": 2754,
+                "unitPrice": 4644.866506608645,
                 "warehouseCode": "string"
               },
               {
                 "sku": "string",
-                "quantity": 5240,
-                "unitPrice": 7022.127586431948,
+                "quantity": 3537,
+                "unitPrice": 3189.1185904446775,
                 "warehouseCode": "string"
               }
             ],
             "shipments": [
               {
-                "shipmentId": "b9ff117b-8c79-0889-32aa-b604f336d272",
+                "shipmentId": "2947cd2d-d4a8-3c96-89a3-64793c93eed6",
                 "carrier": "string",
                 "shipFrom": "string",
                 "trackingReference": "string",
                 "status": "delivered"
               },
               {
-                "shipmentId": "3c4ae750-5a6f-83a3-2f41-88be026ca0b0",
+                "shipmentId": "9e8e7c60-e00c-37ad-9067-63e82ed2a531",
                 "carrier": "string",
                 "shipFrom": "string",
                 "trackingReference": "string",
-                "status": "created"
+                "status": "packed"
               }
             ]
           }
@@ -128,7 +128,7 @@ examples:
           {
             "error": "string",
             "message": "string",
-            "statusCode": 8975
+            "statusCode": 8353
           }
       headers:
         - key: Content-Type
