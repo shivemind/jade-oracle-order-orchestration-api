@@ -12,9 +12,9 @@ localResources:
     - ../openapi/oracle-order-orchestration-api.yaml
 cloudResources:
   collections:
-    ../postman/collections/[Baseline] oracle-order-orchestration-api: 52400725-c553a1a0-543d-4740-ae43-e4a12eaeae2e
-    ../postman/collections/[Smoke] oracle-order-orchestration-api: 52400725-70887796-cec6-4ac6-852e-4e44fb42b853
-    ../postman/collections/[Contract] oracle-order-orchestration-api: 52400725-0091afca-1094-4102-a789-8be91340e0f2
+    ../postman/collections/[Baseline] oracle-order-orchestration-api: 52400725-656d5922-1ef9-43b7-b28f-7f2c07ad9461
+    ../postman/collections/[Smoke] oracle-order-orchestration-api: 52400725-ea4b0627-0524-47cc-bbd2-f292e3ee3173
+    ../postman/collections/[Contract] oracle-order-orchestration-api: 52400725-79516219-2174-455b-be45-7ef82775d74e
   environments:
     ../postman/environments/prod.postman_environment.json: 52400725-aad05204-e054-4df2-bb72-7a909673160a
     ../postman/environments/stage.postman_environment.json: 52400725-2577e511-616a-49fc-8a4b-23e288394a96
